@@ -14,14 +14,14 @@ The final compiler translates μGo programs into **Java Assembly (Jasmin)** and 
 
 ---
 
-# Project Structure
-
-
+## Project Structure
+```bash
 Compiler2022
 │
 ├── Compiler_HW1 # Lexical Analyzer (scanner)
 ├── Compiler_HW2 # Parser + Symbol Table
 └── Compiler_HW3 # Code Generation (Jasmin)
+```
 
 
 ### 1. HW1 – 詞法分析 (Lexical Analysis)
@@ -38,7 +38,7 @@ Compiler2022
 
 ### 3. HW3 – 程式碼產生 (Code Generation)
 將語法分析後的結果轉譯為 **Jasmin 組語**：
-* 支援算術運算指令（如 `iadd`, `imul`, `ineg`。
+* 支援算術運算指令（如 `iadd`, `imul`, `ineg`)。
 * 支援流程控制轉譯，包含 `if`, `for`, `switch` 等指令跳轉。
 * 產生可執行的 `.j` 檔案，並透過 `jasmin.jar` 轉為 Java Bytecode。
 
